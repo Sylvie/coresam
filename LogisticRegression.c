@@ -1291,7 +1291,8 @@ inline real khiSqLaw(real x)
 
 inline real khiSqDensity(real x)
 {
-	return (_EXP(-x/2.))/_SQRT(2*M_PI*x);
+	const real valeur_2_pi = 4* asin(1.0);
+	return (_EXP(-x/2.))/_SQRT(valeur_2_pi*x);
 }
 
 real invKhiSqLaw(real x, real convergenceThreshold)

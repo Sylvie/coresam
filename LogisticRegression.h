@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <limits.h>
+#include <math.h>
 
 #define PARAM_SIZE 2
 static const char ABSENT = '0';
